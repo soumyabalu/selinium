@@ -17,15 +17,12 @@ public class Firstpro {
 		driver.getTitle();
 		driver.get("https://www.facebook.com");
 		driver.findElement(By.id("email")).sendKeys("myemailisthis");
-		driver.findElement(By.name("pass")).sendKeys("Bvghyd");
-		
-		//driver.findElements()
-//		driver.findElement(By.id("u_0_2")).submit();
-//		driver.findElement(By.name("firstname")).sendKeys("Chanda");
-//		driver.findElement(By.name("lastname")).sendKeys("krish");
-//		driver.findElement(By.id("month")).sendKeys("may");
-//		driver.findElement(By.id("day")).sendKeys("01");
-//		driver.findElement(By.id("year")).sendKeys("1985");
+		driver.findElement(By.name("pass")).sendKeys("Bvghyd");	
+      	driver.findElement(By.name("firstname")).sendKeys("Chanda");
+		driver.findElement(By.name("lastname")).sendKeys("krish");
+		driver.findElement(By.id("month")).sendKeys("may");
+	    driver.findElement(By.id("day")).sendKeys("01");
+		driver.findElement(By.id("year")).sendKeys("1985");
 		try {
 			Thread.sleep(20000);
 		} catch (InterruptedException e) {
