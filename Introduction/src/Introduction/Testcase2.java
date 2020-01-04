@@ -13,7 +13,8 @@ public class Testcase2 {
 		myobj.get("https://www.google.com/");
 		myobj.get("https://www.facebook.com/");
 		myobj.findElement(By.id("pass")).sendKeys("vfrgs");
-		myobj.findElement(By.id("u_0_2"));
+		myobj.findElement(By.linkText("Forgot account?")).click();
+	
 	}
 
 }
