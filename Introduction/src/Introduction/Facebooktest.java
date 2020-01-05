@@ -16,9 +16,8 @@ public class Facebooktest {
 		driver.get("https://www.google.com/");
 		driver.getTitle();
 		driver.get("https://www.facebook.com");
-		driver.findElement(By.id("email")).sendKeys("myemailisthis");
+		driver.findElement(By.cssSelector("#email")).sendKeys("thisismyemail");
 		driver.findElement(By.name("pass")).sendKeys("Bvghyd");	
-		driver.findElement(By.linkText("Forgot account?")).click();
       	driver.findElement(By.name("firstname")).sendKeys("Chanda");
 		driver.findElement(By.name("lastname")).sendKeys("krish");
 		driver.findElement(By.id("month")).sendKeys("may");
