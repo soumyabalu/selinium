@@ -12,10 +12,7 @@ public class Myclass {
 		
 		//create Driver object for IE browser
 		WebDriver myobj = new InternetExplorerDriver();
-		myobj.get("https://www.google.com/");
-		myobj.get("https://outlook.live.com/");
-		myobj.get("https://kellyservices.safeschools.com/login");
-		myobj.navigate().back();
+		
 
 	}
 
