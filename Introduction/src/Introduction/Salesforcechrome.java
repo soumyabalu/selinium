@@ -16,6 +16,9 @@ public class Salesforcechrome {
 		myobj.findElement(By.name("pw")).sendKeys("hjshcnbhd");
 		//myobj.findElement(By.className("button r4 wide primary")).click();
 		myobj.findElement(By.xpath("//*[@id=\'Login\']")).click();
+		//myobj.findElement(By.xpath("//*[@id='forgot_password_link']")).click();
+		System.out.println(myobj.findElement(By.xpath("//*[@id=\'error\']")).getText());
+
 	}
 	
 
