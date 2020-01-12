@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class Testcase2 {
+public class Facebooktest2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -12,9 +12,11 @@ public class Testcase2 {
 		WebDriver myobj = new FirefoxDriver();
 		myobj.get("https://www.google.com/");
 		myobj.get("https://www.facebook.com/");
-		myobj.findElement(By.id("pass")).sendKeys("vfrgs");
-		myobj.findElement(By.linkText("Forgot account?")).click();
+		myobj.findElement(By.xpath("//*[@id=\'email\']")).sendKeys("thisismyemail");
+		myobj.findElement(By.xpath("//*[@id=\'pass\']")).sendKeys("bndchhgc");
+	    //myobj.findElement(By.xpath("[@id=\'u_0_4\']")).click();
+	
 	
 	}
-
 }
+

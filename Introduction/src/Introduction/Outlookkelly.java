@@ -3,7 +3,7 @@ package Introduction;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class Temporary {
+public class Outlookkelly {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -3,7 +3,6 @@ package Introduction;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Facebooktest {
 
@@ -24,6 +23,7 @@ public class Facebooktest {
 		driver.findElement(By.id("month")).sendKeys("may");
 		driver.findElement(By.xpath("//*[@id=\'day\']")).sendKeys("10");
 		driver.findElement(By.id("year")).sendKeys("1985");
+		
 		try {
 			Thread.sleep(20000);
 		} catch (InterruptedException e) {
