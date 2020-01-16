@@ -23,6 +23,8 @@ public class Staticdrropdown2 {
 			myobj.findElement(By.xpath("//button[@class='js-increment-increase increment-field__button increment-field__increase']")).click();
 			i++;
 		}
+		System.out.println(myobj.findElement(By.name("Passengers")).getText());
+
 		
 		
 		
