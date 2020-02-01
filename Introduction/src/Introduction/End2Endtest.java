@@ -31,25 +31,24 @@ public class End2Endtest {
 		myobj.findElement(By.id("ctl00_mainContent_rbtnl_Trip_1")).click();
 		System.out.println(myobj.findElement(By.id("Div1")).getAttribute("style"));
 		// selecting the passengers
-		myobj.findElement(By.id("divpaxinfo")).click();
-		Select adult = new Select(myobj.findElement(By.xpath("//select[@id='ctl00_mainContent_ddl_Adult']")));
-		adult.selectByValue("2");
-		Select child = new Select(myobj.findElement(By.id("ctl00_mainContent_ddl_Child")));
-		child.selectByValue("2");
-		Select infant = new Select(myobj.findElement(By.id("ctl00_mainContent_ddl_Infant")));
-		infant.selectByValue("1");
-		Select curency = new Select(myobj.findElement(By.id("ctl00_mainContent_DropDownListCurrency")));
-		curency.selectByValue("USD");
-		// checking & validating the seniorcitizen checkbox
-		Assert.assertFalse(myobj.findElement(By.id("ctl00_mainContent_chk_SeniorCitizenDiscount")).isSelected());
-		myobj.findElement(By.id("ctl00_mainContent_chk_SeniorCitizenDiscount")).click();
-		Assert.assertTrue(myobj.findElement(By.id("ctl00_mainContent_chk_SeniorCitizenDiscount")).isSelected());
-		// count of checkboxes
-		myobj.findElements(By.cssSelector("input[type='checkbox']")).size();
-		Assert.assertEquals(myobj.findElements(By.cssSelector("input[type='checkbox']")).size(), 6);
-		// click search
-		myobj.findElement(By.id("ctl00_mainContent_btn_FindFlights")).click();
-
+				myobj.findElement(By.id("divpaxinfo")).click();
+				Select adult = new Select(myobj.findElement(By.xpath("//select[@id='ctl00_mainContent_ddl_Adult']")));
+				adult.selectByValue("2");
+				Select child = new Select(myobj.findElement(By.id("ctl00_mainContent_ddl_Child")));
+				child.selectByValue("2");
+				Select infant = new Select(myobj.findElement(By.id("ctl00_mainContent_ddl_Infant")));
+				infant.selectByValue("1");
+				Select curency = new Select(myobj.findElement(By.id("ctl00_mainContent_DropDownListCurrency")));
+				curency.selectByValue("USD");
+				// checking & validating the seniorcitizen checkbox
+				Assert.assertFalse(myobj.findElement(By.id("ctl00_mainContent_chk_SeniorCitizenDiscount")).isSelected());
+				myobj.findElement(By.id("ctl00_mainContent_chk_SeniorCitizenDiscount")).click();
+				Assert.assertTrue(myobj.findElement(By.id("ctl00_mainContent_chk_SeniorCitizenDiscount")).isSelected());
+				// count of checkboxes
+				myobj.findElements(By.cssSelector("input[type='checkbox']")).size();
+				Assert.assertEquals(myobj.findElements(By.cssSelector("input[type='checkbox']")).size(), 6);
+				// click search
+				myobj.findElement(By.id("ctl00_mainContent_btn_FindFlights")).click();
 	}
 
 }
